@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    box-sizing: border-box;
+}
+.hidden {
+    display: none !important;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1161&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(240, 248, 255, 0.5);
+    width: 80%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+input {
+    width: 60%;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+
+#map {
+    width: 600px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.info-container {
+    background-color: rgba(140, 200, 255, 0.25);
+    box-shadow: rgba(140, 200, 255, 0.4) 5px 5px, rgba(140, 200, 255, 0.3) 10px 10px, rgba(140, 200, 255, 0.2) 15px 15px, rgba(140, 200, 255, 0.1) 20px 20px, rgba(140, 200, 255, 0.05) 25px 25px;;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 400px;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.places-container {
+    height: 100%;
+    width: 60%;
+    overflow: auto;
+}
+
+.place {
+    white-space: nowrap;
+    font-size: 2rem;
+    color: white;
+}
+
+.zipcode-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    font-size: 2rem;
+    margin: 15px;
+}
+
+#state {
+    font-size: 1.5rem;
+}
+
+.zipcode-info {
+    color: white;
+}
+
+#backButton {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-family: inherit;
+    border: 4px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    background-color: rgba(0, 162, 255, 0.4);
+}
+
+@media(max-width: 1000px) {
+    body {
+        flex-direction: column;
+        overflow-y: visible;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    #map, .info-container {
+        width: 80%;
+    }
+    .zipcode-info, .place {
+        font-size: 1rem;
+    }
+    strong {
+        font-size: 1.2rem;
+    }
+    #backButton {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poštanske adrese !</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+     crossorigin="">
+</head>
+<body>
+    <div class="input-container">
+        <h1>Unesi poštansku adresu</h1>
+        <input type="text" id="input-adress" placeholder="Traži..."> 
+    </div>    
+    <button id="backButton" class="hidden">Back</button>
+    <div id="map" class="hidden"></div>
+    <div class="info-container hidden">
+        <div class="places-container">
+            <strong id="state"></strong>
+        </div>
+        <div class="zipcode-container">
+            
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>
